@@ -4,9 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="74bd28e4-ede9-4bbb-a92f-dae249a45c06" name="Changes" comment="remove cache-dependency-path">
-      <change beforePath="$PROJECT_DIR$/.github/workflows/maven.yml" beforeDir="false" afterPath="$PROJECT_DIR$/.github/workflows/maven.yml" afterDir="false" />
-    </list>
+    <list default="true" id="74bd28e4-ede9-4bbb-a92f-dae249a45c06" name="Changes" comment="switch distribution from jetbrains to temurin" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -101,7 +99,7 @@
       <command value="mvn package" />
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.InjectorRegistryTest">
+  <component name="RunManager" selected="JUnit.JSONWriterTest$Q2">
     <configuration name="InjectorRegistryTest$Q1" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="injector" />
       <extension name="coverage">
@@ -192,8 +190,8 @@
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.InjectorRegistryTest" />
         <item itemvalue="JUnit.JSONWriterTest$Q2" />
+        <item itemvalue="JUnit.InjectorRegistryTest" />
         <item itemvalue="JUnit.JSONWriterTest$Q1" />
         <item itemvalue="JUnit.InjectorRegistryTest$Q2" />
         <item itemvalue="JUnit.InjectorRegistryTest$Q1" />
@@ -223,7 +221,7 @@
       <workItem from="1757412063990" duration="2188000" />
       <workItem from="1757420407335" duration="9562000" />
       <workItem from="1757513684436" duration="2478000" />
-      <workItem from="1757518187385" duration="2028000" />
+      <workItem from="1757518187385" duration="2339000" />
     </task>
     <task id="LOCAL-00001" summary="commit yml file">
       <option name="closed" value="true" />
@@ -281,7 +279,23 @@
       <option name="project" value="LOCAL" />
       <updated>1757520131113</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="switch java version from 25 to 25-ea">
+      <option name="closed" value="true" />
+      <created>1757520292648</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1757520292648</updated>
+    </task>
+    <task id="LOCAL-00009" summary="switch distribution from jetbrains to temurin">
+      <option name="closed" value="true" />
+      <created>1757520463006</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1757520463006</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -300,8 +314,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="update injector and rewrite annotation scanner" />
-    <MESSAGE value="remove one star for the classpath scanning" />
     <MESSAGE value="SQLi =&gt; JDBi" />
     <MESSAGE value="update POM" />
     <MESSAGE value="bump to java 19" />
@@ -325,6 +337,8 @@
     <MESSAGE value="java execute to mvn" />
     <MESSAGE value="java 25 to 21" />
     <MESSAGE value="remove cache-dependency-path" />
-    <option name="LAST_COMMIT_MESSAGE" value="remove cache-dependency-path" />
+    <MESSAGE value="switch java version from 25 to 25-ea" />
+    <MESSAGE value="switch distribution from jetbrains to temurin" />
+    <option name="LAST_COMMIT_MESSAGE" value="switch distribution from jetbrains to temurin" />
   </component>
 </project>
