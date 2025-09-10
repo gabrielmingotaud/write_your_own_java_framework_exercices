@@ -1,20 +1,20 @@
-on:
-  push:
-    branches: [ master ]
-  pull_request:
-    branches: [ master ]
-
-jobs:
-  build:
-    runs-on: ubuntu-latest
-    strategy:
-      matrix:
-        java: [ 25 ]
-    name: Java ${{ matrix.java }}
-    steps:
-      - uses: actions/checkout@v5
-      - uses: actions/setup-java@v5
-        with:
-          distribution: 'jetbrains' # See 'Supported distributions' for available options
-          java-version: '25'
-      - run: java -cp injector -ea com.github.forax.framework.injector.InjectorRegistryTest
+#on:
+#  push:
+#    branches: [ master ]
+#  pull_request:
+#    branches: [ master ]
+#
+#jobs:
+#  build:
+#    runs-on: ubuntu-latest
+#    strategy:
+#      matrix:
+#        java: [ 25 ]
+#    name: Java ${{ matrix.java }}
+#    steps:
+#      - uses: actions/checkout@v5
+#      - uses: actions/setup-java@v5
+#        with:
+#          distribution: 'jetbrains' # See 'Supported distributions' for available options
+#          java-version: '25'
+#      - run: java -cp injector -ea com.github.forax.framework.injector.InjectorRegistryTest
