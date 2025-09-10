@@ -4,8 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="74bd28e4-ede9-4bbb-a92f-dae249a45c06" name="Changes" comment="move github action">
+    <list default="true" id="74bd28e4-ede9-4bbb-a92f-dae249a45c06" name="Changes" comment="java execute to mvn">
       <change beforePath="$PROJECT_DIR$/.github/workflows/maven.yml" beforeDir="false" afterPath="$PROJECT_DIR$/.github/workflows/maven.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -83,6 +84,9 @@
       <recent name="$PROJECT_DIR$/orm" />
       <recent name="$PROJECT_DIR$/mapper/src/main/java/com/github/forax/framework/mapper" />
       <recent name="$PROJECT_DIR$/mapper" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/.github/workflows" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
       <recent name="org.github.forax.framework.interceptor" />
@@ -220,7 +224,7 @@
       <workItem from="1757412063990" duration="2188000" />
       <workItem from="1757420407335" duration="9562000" />
       <workItem from="1757513684436" duration="2478000" />
-      <workItem from="1757518187385" duration="1352000" />
+      <workItem from="1757518187385" duration="1698000" />
     </task>
     <task id="LOCAL-00001" summary="commit yml file">
       <option name="closed" value="true" />
@@ -254,7 +258,15 @@
       <option name="project" value="LOCAL" />
       <updated>1757519446673</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="java execute to mvn">
+      <option name="closed" value="true" />
+      <created>1757519613097</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1757519613097</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -273,7 +285,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="rework interceptor code/questions" />
     <MESSAGE value="use throw switch in the tests" />
     <MESSAGE value="remove weird import that make the CI fails" />
     <MESSAGE value="update injector and rewrite annotation scanner" />
@@ -298,6 +309,7 @@
     <MESSAGE value="test" />
     <MESSAGE value="maven.yml run injector test" />
     <MESSAGE value="move github action" />
-    <option name="LAST_COMMIT_MESSAGE" value="move github action" />
+    <MESSAGE value="java execute to mvn" />
+    <option name="LAST_COMMIT_MESSAGE" value="java execute to mvn" />
   </component>
 </project>
