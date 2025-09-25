@@ -108,7 +108,7 @@ public final class JSONWriter {
             case String s -> '"' + s + "\"";
             case Double d -> "" + d;
             case null -> "null";
-            case Object _ -> {
+            case Object obj -> {
                 yield toJSONObject(o);
             }
 
