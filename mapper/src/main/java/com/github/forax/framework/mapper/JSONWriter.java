@@ -73,36 +73,37 @@ public final class JSONWriter {
 
   //private record Property(String prefix, Method getter){}
 
-  private static final class PropertyDescriptorClassValue extends ClassValue<List<JSONFuntion>>{
+  private static final class PropertyDescriptorClassValue extends ClassValue<List<JSONFuntion>> {
     @Override
-    protected List<JSONFuntion> computeValue(Class<?> type){
+    protected List<JSONFuntion> computeValue(Class<?> type) {
       var beanInfo = Utils.beanInfo(type);
       return Arrays.stream(beanInfo.getPropertyDescriptors())
-              .filter(propertyDescriptor -> !propertyDescriptor.getName().equals("class"))
-              .<JSONFuntion>map(propertyDescriptor -> {
-                var name = propertyDescriptor.getName();
-                var getter = propertyDescriptor.getReadMethod();
-                var prefix = "\"" + name + "\": ";
-                return (JSONWriter writer, Object o) -> {
-                  var value = Utils.invokeMethod(o,getter);
-                  return prefix + writer.toJSON(value);
-                };
-              })
-              .toList();
+          .filter(propertyDescriptor -> !propertyDescriptor.getName().equals("class"))
+          .<JSONFuntion>map(propertyDescriptor -> {
+            var name = propertyDescriptor.getName();
+            var getter = propertyDescriptor.getReadMethod();
+            var prefix = "\"" + name + "\": ";
+            return (JSONWriter writer, Object o) -> {
+              var value = Utils.invokeMethod(o, getter);
+              return prefix + writer.toJSON(value);
+            };
+          })
+          .toList();
     }
   }
+
   private static final PropertyDescriptorClassValue CLASS_VALUE = new PropertyDescriptorClassValue();
 
-  private String toJSONObject(Object o){
+  private String toJSONObject(Object o) {
     var propertyDescriptors = CLASS_VALUE.get(o.getClass());
     //var beanInfo = Utils.beanInfo(o.getClass());
     return propertyDescriptors.stream()
-            .map(jsonFuntion -> jsonFuntion.apply(this, o))
-            .collect(Collectors.joining(", ","{","}"));
+        .map(jsonFuntion -> jsonFuntion.apply(this, o))
+        .collect(Collectors.joining(", ", "{", "}"));
   }
 
-  public String toJSON(Object o){
-    return switch(o){
+  public String toJSON(Object o) {
+    return switch (o) {
       case Boolean b -> "" + b;
       case Integer i -> "" + i;
       case String s -> '"' + s + "\"";
